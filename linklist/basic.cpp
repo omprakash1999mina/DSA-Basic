@@ -1,20 +1,19 @@
 #include <bits/stdc++.h>
 #include <algorithm>
 using namespace std;
-
 #define ll long long
 
 class Node
 {
-public:
-    int head;
-    Node *next;
+    public:
+        int head;
+        Node *next;
 
-    Node(int value)
-    {
-        this->head = value;
-        this->next = NULL;
-    }
+        Node(int value)
+        {
+            this->head = value;
+            this->next = NULL;
+        }
 };
 
 void insert_At_Tail(Node *&tail, int value)
@@ -40,7 +39,7 @@ void print_list(Node *&head)
         cout << temp->head << " ";
         temp = temp->next;
     }
-    cout<<endl;
+    cout << endl;
 }
 
 int main()
@@ -50,7 +49,7 @@ int main()
     cout.tie(0);
 
     Node *node1 = new Node(10);
-    Node *head =node1;
+    Node *head = node1;
     Node *tail = node1;
 
     insert_At_Head(head, 11);
